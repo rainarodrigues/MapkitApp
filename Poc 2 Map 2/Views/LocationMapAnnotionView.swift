@@ -1,14 +1,14 @@
 //
-//  LocationMapAnnotion.swift
+//  LocationMapAnnotionView.swift
 //  Poc 2 Map 2
 //
-//  Created by Raina Rodrigues de Lima on 19/09/23.
+//  Created by Raina Rodrigues de Lima on 26/09/23.
 //
 
 import SwiftUI
 import MapKit
 
-struct LocationMapAnnotion: View {
+struct LocationMapAnnotionView: View {
     
     let accentColor = Color("AccentColor")
     
@@ -31,12 +31,12 @@ struct LocationMapAnnotion: View {
                 .frame(width: 10, height: 10)
                 .rotationEffect(Angle(degrees: 180))
                 .offset(y:-3)
-                .padding(.bottom, 35)
+                .padding(.bottom, 40 )
         }
     }
 }
 
-struct LocationMapAnnotion_Previews: PreviewProvider {
+struct LocationMapAnnotionView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack{
             Color.black.ignoresSafeArea()
@@ -44,3 +44,4 @@ struct LocationMapAnnotion_Previews: PreviewProvider {
         }
     }
 }
+
